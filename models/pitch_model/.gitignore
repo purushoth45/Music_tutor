@@ -1,0 +1,10 @@
+# Ignore large model checkpoints to prevent accidental commits
+*.pt
+*.pth
+*.bin
+*.onnx
+*.ckpt
+
+# Preserve repository documentation and gitkeep
+!.gitkeep
+!README.md

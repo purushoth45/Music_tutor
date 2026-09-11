@@ -33,6 +33,7 @@ class AudioPracticeBloc extends Bloc<AudioPracticeEvent, AudioPracticeState> {
     }
 
 
+
     try {
       if (audioService != null) {
         await audioService!.startRecording();
@@ -41,7 +42,7 @@ class AudioPracticeBloc extends Bloc<AudioPracticeEvent, AudioPracticeState> {
     } catch (e) {
       emit(AudioPracticeError('Failed to start recording: ${e.toString()}'));
     }
-  }
+  }//new
 
   Future<void> _onStopRecording(
     StopRecordingEvent event,
